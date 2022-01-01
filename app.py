@@ -15,7 +15,7 @@ def home():
 
 @app.route('/predict',methods=['POST'])
 def predict():
-	df = pd.read_csv('https://raw.githubusercontent.com/AmritaANair/spam-filtering-nlp/main/SMS-Spam-Detector/spam.csv', encoding="latin-1")
+	df = pd.read_csv('https://raw.githubusercontent.com/AmritaANair/SMS-spam-detector/main/spam.csv', encoding="latin-1")
 	df.drop(['Unnamed: 2', 'Unnamed: 3', 'Unnamed: 4'], axis=1, inplace=True)
 	df.rename(columns = {'v1':'class'}, inplace =True)
 	df.rename(columns = {'v2':'message'}, inplace =True)
