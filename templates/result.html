@@ -9,24 +9,26 @@
 	<header>
 		<div class="container">
 		<div id="brandname">
-			ML App
+			<!--Machine Learning App for -->
 		</div>
-		<h2>Spam Detector For SMS Messages</h2>
+		<h2 style="text-align: center;">Spam Detector For Messages using Machine Learning</h2>
 		
 	</div>
 	</header>
-	<p style="color:blue;font-size:20;text-align: center;"><b>Results for Comment</b></p>
+	<p style="color: rgb(1, 1, 49);font-size: 20;text-align: center;"><b>The Entered Message is</b></p>
 	<div class="results">
 
 
 		
 	{% if prediction == 1%}
-	<h2 style="color:red;">Spam</h2>
+	<h2 style="color: red;text-align: center;">Spam</h2>
 	{% elif prediction == 0%}
-	<h2 style="color:blue;">Not a Spam (It is a Ham)</h2>
+	<h2 style="color: green;text-align: center;">Not Spam</h2>
 	{% endif %}
 
 	</div>
-
+	<form action="home.html"style="text-align: center;">
+		<input type="submit" class="btn-info" value="Predict Again">	
+	</form>
 </body>
 </html>

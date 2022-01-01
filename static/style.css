@@ -1,5 +1,5 @@
 body{
-	font:15px/1.5 Arial, Helvetica,sans-serif;
+	font:15px/1.5, sans-serif;
 	padding: 0px;
 	background-color:#f4f3f3;
 }
@@ -11,7 +11,7 @@ body{
 }
 
 header{
-	background:#03A9F4;#35434a;
+	background:#03A9F4;
 	border-bottom:#448AFF 3px solid;
 	height:120px;
 	width:100%;
@@ -20,12 +20,12 @@ header{
 }
 
 .main-header{
-			text-align:center;
-			background-color: blue;
-			height:100px;
-			width:100%;
-			margin:0px;
-		}
+	text-align:center;
+	background-color: blue;
+	height:100px;
+	width:100%;
+	margin:0px;
+}
 #brandname{
 	float:left;
 	font-size:30px;
@@ -47,7 +47,7 @@ header h2{
 .btn-info:hover {background: #0b7dda;}
 
 
-.resultss{
+.results{
 	border-radius: 15px 50px;
     background: #345fe4;
     padding: 20px; 
