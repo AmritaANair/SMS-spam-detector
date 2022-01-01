@@ -39,8 +39,8 @@ def predict():
 		message = request.form['message']
 		data = [message]
 		vect = cv.transform(data).toarray()
-		pred = clf.predict(vect)
-	return render_template('result.html',prediction = pred)
+		my_prediction = clf.predict(vect)
+	return render_template('result.html',prediction = my_prediction)
 
 
 
