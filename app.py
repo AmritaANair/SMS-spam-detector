@@ -12,9 +12,7 @@ app = Flask(__name__)
 @app.route('/')
 def home():
 	return render_template('home.html')
-@app.route('/predict_again')
-def home():
-	return render_template('home.html')
+
 @app.route('/predict',methods=['POST'])
 def predict():
 	df = pd.read_csv('https://raw.githubusercontent.com/AmritaANair/SMS-spam-detector/main/spam.csv', encoding="latin-1")
